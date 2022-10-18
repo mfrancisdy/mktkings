@@ -1,15 +1,17 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "../pages/home";
-import Header from "./header";
+import Home from "../pages/Home";
+import Header from "./Header";
+import Footer from './Footer'
 
 export default function NavPath() {
     return (
-    <Router>
-        <Header />
-        <Routes>
-            <Route path="/" exact element={<Home/>} />
-        </Routes>
-    </Router>
+        <Router>
+            <Header />
+            <Routes>
+                <Route path="/" exact element={<Home />} />
+            </Routes>
+            <Footer />
+        </Router>
     );
 }

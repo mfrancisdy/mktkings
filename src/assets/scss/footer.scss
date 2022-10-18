@@ -1,0 +1,55 @@
+/* 
+Author: Hostwire Systems
+Copyright & Ownership: Hostwire Systems
+Author URL: https://hostwire.systems/
+*/
+
+.marketking-footer {
+    padding-top: 10px;
+    background: linear-gradient(180deg, #DEB570 0%, #CC822A 43.11%);
+}
+
+.footer-text {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.035em;
+    text-transform: capitalize;
+    color: #141111;
+}
+
+.footer-menu {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 38px;
+    color: #141111;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+
+}
+
+.footer-submenu {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: none !important;
+    font-size: 15px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.footer-copyright {
+    color: #141111;
+    text-decoration: none !important;
+}

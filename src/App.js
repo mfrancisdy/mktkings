@@ -1,5 +1,5 @@
-import NavPath from "./components/navpath";
-import './assets/css/style.css'
+import NavPath from "./components/Navpath";
+import './assets/scss/main.scss'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
