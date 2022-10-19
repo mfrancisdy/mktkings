@@ -2,12 +2,11 @@ import React,{useState} from "react";
 import SliderAvatar from '../../assets/images/slider-avatar.svg'
 import TimelineObserver from "react-timeline-animation";
 import Timeline from "../../components/timeline";
+import Tabs from "../../components/tabs";
 
 export default function Home() {
 
-    const [message, setMessage] = useState("");
     const onCallback = () => {
-        console.log("awesome");
     };
 
     return (
@@ -176,6 +175,15 @@ export default function Home() {
                             />
                             )}
                             />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section className='scroll5'>
+                <div className="container">
+                    <div className="row">
+                        <div className="col-md-12">
+                            <Tabs />
                         </div>
                     </div>
                 </div>
