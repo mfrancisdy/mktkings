@@ -208,6 +208,8 @@ export default function Home() {
                     </div>
                 </div>
             </section>
+
+
             <section className="getmoreupdate-section">
                 <div className="container">
                     <h1>Get More Updates</h1>

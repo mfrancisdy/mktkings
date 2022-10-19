@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import '../assets/scss/timeline.css';
+
 
 const Timeline = ({ setObserver, callback }) => {
   const [message1, setMessage1] = useState("");
@@ -21,53 +21,53 @@ const Timeline = ({ setObserver, callback }) => {
 
   const step1 = (
     <div className="message">
-        <div className="row timelineBox">
-            <div className="col-12">
-                <h3 className='timelineTitle'>Web development</h3>
-                <p className='timelineText'>We create websites for crypto projects and take care of the coding part to the hosting on the domain of your choice.</p>
-            </div>
-         </div>
+      <div className="row timelineBox">
+        <div className="col-12">
+          <h3 className='timelineTitle'>Web development</h3>
+          <p className='timelineText'>We create websites for crypto projects and take care of the coding part to the hosting on the domain of your choice.</p>
+        </div>
+      </div>
     </div>
   )
 
   const step2 = (
     <div className="message2">
-        <div className="row timelineBox">
-            <div className="col-12">
-                <h3 className='timelineTitle'>DEXs</h3>
-                <p className='timelineText'>We can create a DEX on any smart chain with so much flexibility- if you want a PCS fork, we can do that but if you want something truly customized (UI and Backend) we provide this as well. Please reach out and tell us what you are interested in.</p>
-            </div>
-         </div>
+      <div className="row timelineBox">
+        <div className="col-12">
+          <h3 className='timelineTitle'>DEXs</h3>
+          <p className='timelineText'>We can create a DEX on any smart chain with so much flexibility- if you want a PCS fork, we can do that but if you want something truly customized (UI and Backend) we provide this as well. Please reach out and tell us what you are interested in.</p>
+        </div>
+      </div>
     </div>
   )
   const step3 = (
     <div className="message">
-        <div className="row timelineBox">
-            <div className="col-12">
-                <h3 className='timelineTitle'>white Paper Creation </h3>
-                <p className='timelineText'>For 1BNB, we offer a brilliant write-up on your project with Graphics in a whitepaper format. Feel free to contact us for examples.</p>
-            </div>
-         </div>
+      <div className="row timelineBox">
+        <div className="col-12">
+          <h3 className='timelineTitle'>white Paper Creation </h3>
+          <p className='timelineText'>For 1BNB, we offer a brilliant write-up on your project with Graphics in a whitepaper format. Feel free to contact us for examples.</p>
+        </div>
+      </div>
     </div>
   )
   const step4 = (
     <div className="message2">
-        <div className="row timelineBox">
-            <div className="col-12">
-                <h3 className='timelineTitle'>Web development</h3>
-                <p className='timelineText'>We create websites for crypto projects and take care of the coding part to the hosting on the domain of your choice.</p>
-            </div>
-         </div>
+      <div className="row timelineBox">
+        <div className="col-12">
+          <h3 className='timelineTitle'>Web development</h3>
+          <p className='timelineText'>We create websites for crypto projects and take care of the coding part to the hosting on the domain of your choice.</p>
+        </div>
+      </div>
     </div>
   )
   const step5 = (
     <div className="message">
-        <div className="row timelineBox">
-            <div className="col-12">
-                <h3 className='timelineTitle'>Web development</h3>
-                <p className='timelineText'>We create websites for crypto projects and take care of the coding part to the hosting on the domain of your choice.</p>
-            </div>
-         </div>
+      <div className="row timelineBox">
+        <div className="col-12">
+          <h3 className='timelineTitle'>Web development</h3>
+          <p className='timelineText'>We create websites for crypto projects and take care of the coding part to the hosting on the domain of your choice.</p>
+        </div>
+      </div>
     </div>
   )
 
@@ -83,14 +83,14 @@ const Timeline = ({ setObserver, callback }) => {
   const someCallback3 = () => {
     setMessage3(step3);
   };
-  
+
   const someCallback4 = () => {
     setMessage4(step4);
   };
 
-const someCallback5 = () => {
+  const someCallback5 = () => {
     setMessage5(step5);
-};
+  };
 
 
   useEffect(() => {
