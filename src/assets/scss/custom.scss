@@ -1,9 +1,3 @@
-/* 
-Author: Hostwire Systems
-Copyright & Ownership: Hostwire Systems
-Author URL: https://hostwire.systems/
-*/
-
 body {
     background-color: #1D1B1B !important;
     font-family: 'Poppins', sans-serif !important;
@@ -298,4 +292,46 @@ ul.de_nav.text-left>li {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
+}
+.accordionItem {
+    text-align: center;
+}
+h2.accordionHeader {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 9.55%, rgba(255, 255, 255, 0.09) 100%) !important;
+    border-radius: 16.0176px !important;
+    text-align: center !important;
+}
+.accordion-button:focus {
+    z-index: 3;
+    border-color: none !important;
+    outline: 0;
+    box-shadow: none !important;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 9.55%, rgba(255, 255, 255, 0.09) 100%) !important;
+    border-radius: 16.0176px;
+}
+.accordion-button {
+    text-align: center !important;
+    display: block !important;
+}
+h3.accordionTitle {
+    font-family: 'Source Sans Pro';
+    font-weight: 700;
+    font-size: 35.474px;
+    line-height: 45px;
+    background: linear-gradient(90deg, #FFD693 0%, #DDA150 98.98%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+button.accordion-button.collapsed {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 9.55%, rgba(255, 255, 255, 0.09) 100%) !important;
+    border-radius: 16.0176px !important;
+}
+.accordion-button:not(.collapsed) {
+    color: var(--bs-accordion-active-color);
+    background-color: var(--bs-accordion-active-bg);
+    box-shadow: none !important;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 9.55%, rgba(255, 255, 255, 0.09) 100%) !important;
+    border-radius: 16.0176px;
 }
