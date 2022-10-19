@@ -40,7 +40,7 @@ function Tabs() {
         <div className='row'>
           <div className='col-lg-10' style={{ margin: '0 auto' }}>
             <div className="items_filter">
-              <ul className="de_nav text-left">
+              <ul style={{textAlign:'center'}} className="de_nav text-left">
                 <li id='Mainbtn' className="li-active"><span onClick={handleBtnClick}>Website</span></li>
                 <li id='Mainbtn1' className=""><span onClick={handleBtnClick1}>Dashboard</span></li>
                 <li id='Mainbtn2' className=""><span onClick={handleBtnClick2}>NFT Website</span></li>

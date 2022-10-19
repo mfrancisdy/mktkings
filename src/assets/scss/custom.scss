@@ -287,3 +287,15 @@ ul.de_nav.text-left>li {
     background-clip: text;
     text-fill-color: transparent;
 }
+.title{
+    font-weight: 700;
+    font-size: 47px;
+    line-height: 86px;
+    letter-spacing: 0.035em;
+    text-transform: capitalize;
+    background: linear-gradient(90deg, #FFD693 -6.48%, #DDAD63 39.63%, #D78A2D 92.14%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
