@@ -1,4 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
+import Carousel from 'react-bootstrap/Carousel';
+import SliderImage from '../assets/Images/Slider/work.svg';
+
 
 function Tabs() {
 
@@ -37,41 +40,153 @@ function Tabs() {
 
   return (
     <div>
-        <div className='row'>
-          <div className='col-lg-10' style={{ margin: '0 auto' }}>
-            <div className="items_filter">
-              <ul style={{textAlign:'center'}} className="de_nav text-left">
-                <li id='Mainbtn' className="li-active"><span onClick={handleBtnClick}>Website</span></li>
-                <li id='Mainbtn1' className=""><span onClick={handleBtnClick1}>Dashboard</span></li>
-                <li id='Mainbtn2' className=""><span onClick={handleBtnClick2}>NFT Website</span></li>
-                <li id='Mainbtn3' className=""><span onClick={handleBtnClick3}>Staking</span></li>
-                </ul>
+      <div className='row'>
+        <div className='col-lg-10' style={{ margin: '0 auto' }}>
+          <div className="items_filter">
+            <ul style={{ textAlign: 'center' }} className="de_nav text-left">
+              <li id='Mainbtn' className="li-active"><span onClick={handleBtnClick}>Website</span></li>
+              <li id='Mainbtn1' className=""><span onClick={handleBtnClick1}>Dashboard</span></li>
+              <li id='Mainbtn2' className=""><span onClick={handleBtnClick2}>NFT Website</span></li>
+              <li id='Mainbtn3' className=""><span onClick={handleBtnClick3}>Staking</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      {openMenu === "web" && (
+        <div id='zero1' className='onStep px-5 fadeIn tabs-carousel'>
+          <div className="container">
+            <div className="row">
+              <div className="col-md-12">
+                <Carousel variant="dark">
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src={SliderImage}
+                      alt="First slide"
+                    />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src={SliderImage}
+                      alt="Second slide"
+                    />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src={SliderImage}
+                      alt="Third slide"
+                    />
+                  </Carousel.Item>
+                </Carousel>
+              </div>
             </div>
           </div>
         </div>
-
-        {openMenu === "web" && (
-          <div id='zero1' className='onStep px-5 fadeIn'>
-            <h1>Tab 1</h1>
+      )}
+      {openMenu === "dash" && (
+        <div id='zero2' className='onStep px-5 fadeIn tabs-carousel'>
+          <div className="container">
+            <div className="row">
+              <div className="col-md-12">
+                <Carousel variant="dark">
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src={SliderImage}
+                      alt="First slide"
+                    />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src={SliderImage}
+                      alt="Second slide"
+                    />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src={SliderImage}
+                      alt="Third slide"
+                    />
+                  </Carousel.Item>
+                </Carousel>
+              </div>
+            </div>
           </div>
-        )}
-        {openMenu === "dash" && (
-          <div id='zero2' className='onStep px-5 fadeIn'>
-            <h1>Tab 2</h1>
-          </div>
-        )}
-        {openMenu === "nft" && (
-          <div id='zero3' className='onStep px-5 fadeIn'>
-            <h1>Tab 3</h1>
-          </div>
-        )}
-        {openMenu === "stake" && (
-          <div id='zero4' className='onStep px-5 fadeIn'>
-            <h1>Tab 4</h1>   
-          </div>
-        )}
-        
         </div>
+      )}
+      {openMenu === "nft" && (
+        <div id='zero3' className='onStep px-5 fadeIn tabs-carousel'>
+          <div className="container">
+            <div className="row">
+              <div className="col-md-12">
+                <Carousel variant="dark">
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src={SliderImage}
+                      alt="First slide"
+                    />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src={SliderImage}
+                      alt="Second slide"
+                    />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src={SliderImage}
+                      alt="Third slide"
+                    />
+                  </Carousel.Item>
+                </Carousel>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+      {openMenu === "stake" && (
+        <div id='zero4' className='onStep px-5 fadeIn tabs-carousel'>
+          <div className="container">
+            <div className="row">
+              <div className="col-md-12">
+                <Carousel variant="dark">
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src={SliderImage}
+                      alt="First slide"
+                    />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src={SliderImage}
+                      alt="Second slide"
+                    />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src={SliderImage}
+                      alt="Third slide"
+                    />
+                  </Carousel.Item>
+                </Carousel>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+    </div>
   );
 }
 export default Tabs
