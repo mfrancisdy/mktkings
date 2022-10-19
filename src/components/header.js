@@ -1,8 +1,6 @@
 import React from 'react';
 import { Link } from '@reach/router';
-import MainLogo from '../assets/images/logo-main.svg'
-
-
+import MainLogo from '../assets/images/logomain.svg'
 
 export default function Header() {
     return (

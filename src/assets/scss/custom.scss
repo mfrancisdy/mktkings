@@ -158,7 +158,7 @@ button.contactBtn {
 }
 
 .scroll2 {
-    padding: 0 0 4vw 0;
+    padding: 0 0 40px 0;
 }
 
 .iconBox {
@@ -219,7 +219,7 @@ p.scroll3-p {
 }
 
 .scroll3Row {
-    padding: 6vw 0;
+    padding: 60px 0;
 }
 
 .scrollBtn {
@@ -236,7 +236,7 @@ p.scroll3-p {
     margin-top: 60px;
 }
 .scroll4 {
-    padding: 4vw 0 20vw 0;
+    padding: 4vw 0 120px 0;
 }
 .timelineTitle{
     font-weight: 700;
@@ -256,7 +256,7 @@ p.scroll3-p {
     line-height: 21px;
 }
 .scroll5{
-    padding: 4vw 0;
+    padding: 120px 0;
 }
 .items_filter {
     background: linear-gradient(105.42deg, rgba(255, 255, 255, 0.11) -3.07%, rgba(255, 255, 255, 0.11) 49.04%, rgba(255, 255, 255, 0) 97.84%);
@@ -334,4 +334,7 @@ button.accordion-button.collapsed {
     box-shadow: none !important;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 9.55%, rgba(255, 255, 255, 0.09) 100%) !important;
     border-radius: 16.0176px;
+}
+.scroll6 {
+    padding: 60px 0;
 }
