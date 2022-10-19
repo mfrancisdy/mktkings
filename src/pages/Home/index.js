@@ -1,5 +1,5 @@
 import React from "react";
-import SliderAvatar from '../assets/Images/slider-avatar.svg'
+import SliderAvatar from '../../assets/Images/slider-avatar.svg'
 
 export default function Home() {
     return (
@@ -39,6 +39,7 @@ export default function Home() {
                     </div>
                 </div>
             </section>
+
             <section className='scroll2'>
                 <div className='container'>
                     <div className='row'>
@@ -121,6 +122,7 @@ export default function Home() {
                     </div>
                 </div>
             </section>
+
             <section className="scroll3">
                 <div className="container">
                     <div className="row scroll3Row">
@@ -141,6 +143,20 @@ export default function Home() {
                         </div>
                         <div className='col-md-6 scroll3Img'>
                             <img src='./img/scroll302.png' alt='img3' />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section className="getmoreupdate-section">
+                <div className="container">
+                    <h1>Get More Updates</h1>
+                    <p>Join our mailing list to stay in the loop with our newest feature releases, NFT drops, and tips and tricks </p>
+                    <div className="row d-flex justify-content-center align-items-center subscribe">
+                        <div className="col-md-8">
+                            <div className="search position-relative">
+                                <input className="form-control text-area" placeholder="Your Email" />
+                                <button className="btn btn-primary position-absolute">I'm In</button>
+                            </div>
                         </div>
                     </div>
                 </div>
