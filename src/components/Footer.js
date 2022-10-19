@@ -1,5 +1,5 @@
 import React from "react";
-import LogoDark from '../assets/Images/logo-dark.svg'
+import LogoDark from '../assets/images/logo-dark.svg'
 import { Link } from '@reach/router';
 
 export default function Footer() {

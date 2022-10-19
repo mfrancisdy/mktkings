@@ -1,5 +1,5 @@
 import React from "react";
-import SliderAvatar from '../../assets/Images/slider-avatar.svg'
+import SliderAvatar from '../../assets/images/slider-avatar.svg'
 
 export default function Home() {
     return (
