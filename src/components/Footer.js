@@ -33,9 +33,6 @@ export default function Footer() {
             </section>
             <div className="text-center p-4 footer-copyright">
                 © {(new Date().getFullYear())} Copyright MarketKings™ &nbsp;
-                <a className="text-reset fw-bold footer-copyright" href="#/">
-                    Hostwire Systems
-                </a>
             </div>
         </footer>
 
