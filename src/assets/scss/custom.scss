@@ -236,3 +236,23 @@ p.scroll3-p {
 .hometop-section {
     margin-top: 60px;
 }
+.scroll4 {
+    padding: 4vw 0 20vw 0;
+}
+.timelineTitle{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 86px;
+    letter-spacing: 0.035em;
+    text-transform: capitalize;
+    background: linear-gradient(90deg, #FFD693 -6.48%, #DDAD63 39.63%, #D78A2D 92.14%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+.timelineText{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+}

@@ -1,7 +1,15 @@
-import React from "react";
+import React,{useState} from "react";
 import SliderAvatar from '../../assets/images/slider-avatar.svg'
+import TimelineObserver from "react-timeline-animation";
+import Timeline from "../../components/timeline";
 
 export default function Home() {
+
+    const [message, setMessage] = useState("");
+    const onCallback = () => {
+        console.log("awesome");
+    };
+
     return (
         <>
             <section className='scroll1 hometop-section'>
@@ -147,6 +155,31 @@ export default function Home() {
                     </div>
                 </div>
             </section>
+            <section className='scroll4'>
+                <div className="container">
+                    <div className="row">
+                        <div className="col-md-12">
+                            <h2 className='text-center py-4'>Our Services</h2>
+                            <p className='text-center'>These are some services we offer to both budding and existing projects. If you would like examples of each service just send us over an email, as we have plenty of examples!</p>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col-md-12">
+                            <TimelineObserver
+                            initialColor="#e5e5e5"
+                            fillColor="linear-gradient(90deg, #D29449 31.64%, #FFD693 99.97%)"
+                            handleObserve={(setObserver) => (
+                            <Timeline
+                            callback={onCallback}
+                            className="timeline"
+                            setObserver={setObserver}
+                            />
+                            )}
+                            />
+                        </div>
+                    </div>
+                </div>
+            </section>
             <section className="getmoreupdate-section">
                 <div className="container">
                     <h1>Get More Updates</h1>
@@ -160,7 +193,7 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section>      
         </>
     )
 }
