@@ -2,8 +2,6 @@ import React from 'react';
 import { Link } from '@reach/router';
 import MainLogo from '../assets/images/logomain.svg'
 
-
-
 export default function Header() {
     return (
         <header className='container navigation-header'>
