@@ -32,7 +32,7 @@ export default function Footer() {
                 </div>
             </section>
             <div className="text-center p-4 footer-copyright">
-                © {(new Date().getFullYear())} Copyright MarketKings™ &nbsp;
+                © {(new Date().getFullYear())} Copyright MarketKings™ &nbsp; Site By : &nbsp;
                 <a className="text-reset fw-bold footer-copyright" href="#/">
                     Hostwire Systems
                 </a>
