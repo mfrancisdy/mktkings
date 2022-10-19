@@ -1,5 +1,5 @@
 import React from "react";
-import SliderAvatar from '../../assets/images/slider-avatar.svg'
+import SliderAvatar from '../../assets/Images/slider-avatar.svg';
 import TimelineObserver from "react-timeline-animation";
 import Timeline from "../../components/timeline";
 import Tabs from "../../components/tabs";
@@ -166,15 +166,15 @@ export default function Home() {
                     <div className="row">
                         <div className="col-md-12">
                             <TimelineObserver
-                            initialColor="#e5e5e5"
-                            fillColor="linear-gradient(90deg, #D29449 31.64%, #FFD693 99.97%)"
-                            handleObserve={(setObserver) => (
-                            <Timeline
-                            callback={onCallback}
-                            className="timeline"
-                            setObserver={setObserver}
-                            />
-                            )}
+                                initialColor="#e5e5e5"
+                                fillColor="linear-gradient(90deg, #D29449 31.64%, #FFD693 99.97%)"
+                                handleObserve={(setObserver) => (
+                                    <Timeline
+                                        callback={onCallback}
+                                        className="timeline"
+                                        setObserver={setObserver}
+                                    />
+                                )}
                             />
                         </div>
                     </div>
@@ -202,7 +202,7 @@ export default function Home() {
                         </div>
                     </div>
                     <div className="row">
-                        <div style={{padding:'90px 0'}} className="col-md-12">
+                        <div style={{ padding: '90px 0' }} className="col-md-12">
                             <Accordion />
                         </div>
                     </div>
@@ -221,7 +221,7 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-            </section>      
+            </section>
         </>
     )
 }
