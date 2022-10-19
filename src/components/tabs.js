@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 
 function Tabs() {
 
-  const [openMenu, setOpenMenu] = React.useState("Onsale");
+  const [openMenu, setOpenMenu] = React.useState("web");
 
   const handleBtnClick = () => {
     setOpenMenu("web");

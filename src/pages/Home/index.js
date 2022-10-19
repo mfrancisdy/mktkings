@@ -3,6 +3,7 @@ import SliderAvatar from '../../assets/images/slider-avatar.svg'
 import TimelineObserver from "react-timeline-animation";
 import Timeline from "../../components/timeline";
 import Tabs from "../../components/tabs";
+import Accordion from "../../components/accordion";
 
 export default function Home() {
 
@@ -189,6 +190,20 @@ export default function Home() {
                     <div className="row">
                         <div className="col-md-12">
                             <Tabs />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section className='scroll6'>
+                <div className="container">
+                    <div className="row">
+                        <div className="col-md-12">
+                            <h2 className='text-center py-4 title'>Frequently asked questions</h2>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div style={{padding:'90px 0'}} className="col-md-12">
+                            <Accordion />
                         </div>
                     </div>
                 </div>
