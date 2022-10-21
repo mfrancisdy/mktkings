@@ -55,68 +55,56 @@ function Tabs() {
 
       {openMenu === "web" && (
         <div id='zero1' className='onStep px-5 fadeIn tabs-carousel'>
-          <div className="container">
-            <div className="row">
-              <div className="col-md-12">
-                <Carousel variant="dark">
-                  <Carousel.Item>
-                    <img
-                      className="d-block w-100"
-                      src={SliderImage}
-                      alt="First slide"
-                    />
-                  </Carousel.Item>
-                  <Carousel.Item>
-                    <img
-                      className="d-block w-100"
-                      src={SliderImage}
-                      alt="Second slide"
-                    />
-                  </Carousel.Item>
-                  <Carousel.Item>
-                    <img
-                      className="d-block w-100"
-                      src={SliderImage}
-                      alt="Third slide"
-                    />
-                  </Carousel.Item>
-                </Carousel>
-              </div>
-            </div>
-          </div>
+          <Carousel variant="dark">
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src={SliderImage}
+                alt="First slide"
+              />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src={SliderImage}
+                alt="Second slide"
+              />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src={SliderImage}
+                alt="Third slide"
+              />
+            </Carousel.Item>
+          </Carousel>
         </div>
       )}
       {openMenu === "dash" && (
         <div id='zero2' className='onStep px-5 fadeIn tabs-carousel'>
-          <div className="container">
-            <div className="row">
-              <div className="col-md-12">
-                <Carousel variant="dark">
-                  <Carousel.Item>
-                    <img
-                      className="d-block w-100"
-                      src={SliderImage}
-                      alt="First slide"
-                    />
-                  </Carousel.Item>
-                  <Carousel.Item>
-                    <img
-                      className="d-block w-100"
-                      src={SliderImage}
-                      alt="Second slide"
-                    />
-                  </Carousel.Item>
-                  <Carousel.Item>
-                    <img
-                      className="d-block w-100"
-                      src={SliderImage}
-                      alt="Third slide"
-                    />
-                  </Carousel.Item>
-                </Carousel>
-              </div>
-            </div>
-          </div>
+          <Carousel variant="dark">
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src={SliderImage}
+                alt="First slide"
+              />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src={SliderImage}
+                alt="Second slide"
+              />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src={SliderImage}
+                alt="Third slide"
+              />
+            </Carousel.Item>
+          </Carousel>
         </div>
       )}
       {openMenu === "nft" && (
