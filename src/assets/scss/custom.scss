@@ -85,7 +85,7 @@ section.scroll1 {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
-    text-align:left !important;
+    text-align: left !important;
 }
 
 .scroll1Text>p {
@@ -95,7 +95,7 @@ section.scroll1 {
     letter-spacing: 0.035em;
     text-transform: capitalize;
     color: #fff;
-    text-align:left !important;
+    text-align: left !important;
 }
 
 .scroll1Img>img {
@@ -110,7 +110,7 @@ section.scroll1 {
     font-size: 36px;
     line-height: 54px;
     color: #D39952;
-    text-align:left !important;
+    text-align: left !important;
 }
 
 .scroll1Count>div>p {
@@ -119,12 +119,12 @@ section.scroll1 {
     line-height: 19px;
     color: #D39952;
     font-family: inter;
-    text-align:left !important;
+    text-align: left !important;
 }
 
 .row.scroll1Btn {
     padding: 16px 0;
-    text-align:left !important;
+    text-align: left !important;
 }
 
 button.exploreBtn {
@@ -235,10 +235,12 @@ p.scroll3-p {
 .hometop-section {
     margin-top: 60px;
 }
+
 .scroll4 {
     padding: 4vw 0 120px 0;
 }
-.timelineTitle{
+
+.timelineTitle {
     font-weight: 700;
     font-size: 30px;
     line-height: 86px;
@@ -250,30 +252,35 @@ p.scroll3-p {
     background-clip: text;
     text-fill-color: transparent;
 }
-.timelineText{
+
+.timelineText {
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
 }
-.scroll5{
+
+.scroll5 {
     padding: 120px 0;
 }
+
 .items_filter {
     background: linear-gradient(105.42deg, rgba(255, 255, 255, 0.11) -3.07%, rgba(255, 255, 255, 0.11) 49.04%, rgba(255, 255, 255, 0) 97.84%);
     filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.25));
     border-radius: 18px;
     padding: 20px;
 }
+
 ul.de_nav.text-left>li {
     display: inline;
     padding: 0 20px;
     font-weight: 600;
     font-size: 23px;
     line-height: 86px;
-    color:#fff;
+    color: #fff;
     cursor: pointer;
 }
-.li-active{
+
+.li-active {
     text-transform: capitalize;
     background: linear-gradient(90deg, #FFD693 -6.48%, #DDAD63 39.63%, #D78A2D 92.14%);
     -webkit-background-clip: text;
@@ -281,7 +288,8 @@ ul.de_nav.text-left>li {
     background-clip: text;
     text-fill-color: transparent;
 }
-.title{
+
+.title {
     font-weight: 700;
     font-size: 47px;
     line-height: 86px;
@@ -293,14 +301,17 @@ ul.de_nav.text-left>li {
     background-clip: text;
     text-fill-color: transparent;
 }
+
 .accordionItem {
     text-align: center;
 }
+
 h2.accordionHeader {
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 9.55%, rgba(255, 255, 255, 0.09) 100%) !important;
     border-radius: 16.0176px !important;
     text-align: center !important;
 }
+
 .accordion-button:focus {
     z-index: 3;
     border-color: none !important;
@@ -309,12 +320,13 @@ h2.accordionHeader {
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 9.55%, rgba(255, 255, 255, 0.09) 100%) !important;
     border-radius: 16.0176px;
 }
+
 .accordion-button {
     text-align: center !important;
     display: block !important;
 }
+
 h3.accordionTitle {
-    font-family: 'Source Sans Pro';
     font-weight: 700;
     font-size: 35.474px;
     line-height: 45px;
@@ -324,10 +336,12 @@ h3.accordionTitle {
     background-clip: text;
     text-fill-color: transparent;
 }
+
 button.accordion-button.collapsed {
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 9.55%, rgba(255, 255, 255, 0.09) 100%) !important;
     border-radius: 16.0176px !important;
 }
+
 .accordion-button:not(.collapsed) {
     color: var(--bs-accordion-active-color);
     background-color: var(--bs-accordion-active-bg);
@@ -335,6 +349,7 @@ button.accordion-button.collapsed {
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 9.55%, rgba(255, 255, 255, 0.09) 100%) !important;
     border-radius: 16.0176px;
 }
+
 .scroll6 {
     padding: 60px 0;
 }
