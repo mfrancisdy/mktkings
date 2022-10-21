@@ -1,0 +1,54 @@
+@media only screen and (max-width: 600px) {
+    .navbar-brand {
+        img {
+            width: 70%;
+        }
+    }
+
+    .navbar-toggler {
+        border: 1px solid #ffffff !important;
+    }
+
+    .navbar-toggler-icon {
+        background-image: url("../Images/Icon/nav-toggle.png") !important;
+    }
+
+    .hometop-section {
+        margin-top: 1px;
+    }
+
+    .scroll1Text>h1 {
+        font-size: 41px !important;
+        line-height: 46px !important;
+        text-align: center !important;
+    }
+
+    .scroll1Text>p {
+        font-size: 20px !important;
+        text-align: center !important;
+    }
+
+    .scroll1Count>div>h5 {
+        text-align: center !important;
+    }
+
+    .scroll1Count>div>p {
+        text-align: center !important;
+    }
+
+    .scroll1Img {
+        display: none;
+    }
+
+    .row .scroll1Btn {
+        text-align: center !important;
+    }
+
+    .p-0 {
+        margin-bottom: 10px;
+    }
+
+    .text-center {
+        font-size: 20px !important;
+    }
+}
