@@ -13,7 +13,7 @@ export default function Footer() {
                                 <img src={LogoDark} alt="MarketKings™" />
                             </h6>
                             <p className="footer-text">
-                                MarketKings™ is a development and marketing suite dedicated to helping EVM projects raise capital and provide utility to their token holders.
+                                MarketKings™ is a development and marketing suite dedicated to helping EVM projects scale communities and provide utility to their token holders.
                             </p>
                         </div>
                         <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">

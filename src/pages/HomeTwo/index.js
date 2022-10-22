@@ -3,6 +3,7 @@ import SliderAvatar from '../../assets/Images/Hometwo/image01.svg';
 import ImgTwo from '../../assets/Images/Hometwo/_0001.svg'
 import Imgthree from '../../assets/Images/Hometwo/_0006.svg'
 import TimelineObserver from "react-timeline-animation";
+import { Link } from '@reach/router';
 import Timeline from "../../components/timeline";
 import Tabs from "../../components/tabs";
 import Accordion from "../../components/accordion";
@@ -28,15 +29,20 @@ export default function Home() {
                                     </div>
                                     <div className="col-md-6">
                                         <h5>45+</h5>
-                                        <p> Projects Done</p>
+                                        <p> Contracts completed</p>
                                     </div>
                                 </div>
                                 <div className='row scroll1Btn'>
                                     <div className="col-md-6 p-0">
-                                        <button className='btn btn-block exploreBtn'>Explore</button>
+                                        <Link to="/explore">
+                                            <button className='btn btn-block exploreBtn'>Explore</button>
+                                        </Link>
+
                                     </div>
                                     <div className="col-md-6 p-0">
-                                        <button className='btn btn-block contactBtn'>Contact Us</button>
+                                        <Link to="/contact">
+                                            <button className='btn btn-block contactBtn'>Contact Us</button>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
@@ -148,7 +154,7 @@ export default function Home() {
                     <div className="row scroll3Row">
                         <div className='col-md-6 scroll3Col2'>
                             <h2 className='scroll3title'>We turn your ideas into a reality within DeFi</h2>
-                            <p className='scroll3-p'>We offer the most competitive rates and quickest turnover times when it comes to development- be it forking a token, creating a DEX or a staking protocol. Development is just 50% of what we offer as we also offer tried and tested marketing services within small to large budgets, and the best website and whitepaper creation in the crypto niche.</p>
+                            <p className='scroll3-p'>We at MKTKings have our very own full-time development team. We are able to offer the most competitive rates and quickest turnover times in the space when it comes to creating DAPPs.</p>
                             <button className='btn scrollBtn'>Explore</button>
                         </div>
                         <div className='col-md-6 scroll3Img'>
@@ -186,7 +192,7 @@ export default function Home() {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12">
-                            <h2 className='text-center py-4 title'>Our Projects</h2>
+                            <h2 className='text-center py-4 title'>DAPPs created from scratch</h2>
                         </div>
                     </div>
                     <div className="row">
@@ -212,7 +218,7 @@ export default function Home() {
             </section>
 
 
-            <section className="getmoreupdate-section">
+            {/* <section className="getmoreupdate-section">
                 <div className="container">
                     <h1>Get More Updates</h1>
                     <p>Join our mailing list to stay in the loop with our newest feature releases, NFT drops, and tips and tricks </p>
@@ -225,7 +231,7 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
         </>
     )
 }

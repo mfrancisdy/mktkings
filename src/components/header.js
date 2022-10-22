@@ -28,9 +28,9 @@ export default function Header() {
                             <li className="nav-item">
                                 <Link className="nav-link" to="/contact">Contact us</Link>
                             </li>
-                            <li className="nav-item">
+                            {/* <li className="nav-item">
                                 <Link className="nav-link" to="/contact"><button className='btn btn-block headerBtn'>Connect Wallet</button></Link>
-                            </li>
+                            </li> */}
                         </ul>
                     </div>
                 </div>
