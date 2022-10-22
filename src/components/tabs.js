@@ -53,6 +53,8 @@ function Tabs() {
         </div>
       </div>
 
+
+
       {openMenu === "web" && (
         <div id='zero1' className='onStep px-5 fadeIn tabs-carousel'>
           <Carousel variant="dark">

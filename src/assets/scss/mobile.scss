@@ -97,13 +97,21 @@
         line-height: 25px;
     }
 
-    #Mainbtn2 {
-        display: block !important;
-    }
+
 
     .tabs-carousel {
         width: 120% !important;
         margin-left: -36px;
         margin-top: 15px !important;
+    }
+
+    ul.de_nav.text-left>li {
+        display: inline-table !important;
+        font-size: 20px;
+        line-height: 53px;
+    }
+
+    .text-left {
+        margin-left: -33px;
     }
 }
