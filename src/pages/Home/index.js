@@ -54,7 +54,7 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className='scroll2'>
+            <section className='scroll2' id="discover">
                 <div className='container'>
                     <div className='row'>
                         <div className='col-md-12'>
@@ -137,7 +137,7 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className="scroll3">
+            <section className="scroll3" id="about">
                 <div className="container">
                     <div className="row scroll3Row">
                         <div className='col-md-6 scroll3Img'>
@@ -161,7 +161,7 @@ export default function Home() {
                     </div>
                 </div>
             </section>
-            <section className='scroll4'>
+            <section className='scroll4' id="service">
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12">
