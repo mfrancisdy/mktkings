@@ -1,12 +1,9 @@
 import React from 'react';
-import { Link } from '@reach/router';
 import MainLogo from '../assets/Images/logomain.svg';
-import Button from 'react-bootstrap/Button';
+import LogoDark from '../assets/Images/logo-dark.svg';
 import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 
 export default function Header() {
@@ -25,7 +22,7 @@ export default function Header() {
                         >
                             <Offcanvas.Header closeButton>
                                 <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                                    <img src={MainLogo} alt="logo" />
+                                    <img src={LogoDark} alt="logo" />
                                 </Offcanvas.Title>
                             </Offcanvas.Header>
                             <Offcanvas.Body>
