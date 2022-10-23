@@ -28,20 +28,20 @@
     .scroll1Text>h1 {
         font-size: 41px !important;
         line-height: 46px !important;
-        text-align: center !important;
+        //text-align: center !important;
     }
 
     .scroll1Text>p {
         font-size: 20px !important;
-        text-align: center !important;
+        // text-align: center !important;
     }
 
     .scroll1Count>div>h5 {
-        text-align: center !important;
+        // text-align: center !important;
     }
 
     .scroll1Count>div>p {
-        text-align: center !important;
+        // text-align: center !important;
     }
 
     .scroll1Img {
@@ -68,11 +68,11 @@
     .scroll3title {
         font-size: 26px !important;
         line-height: 47px !important;
-        text-align: center !important;
+        //text-align: center !important;
     }
 
     p.scroll3-p {
-        text-align: center;
+        // text-align: center;
         font-size: 15px;
         line-height: 30px;
     }
@@ -100,7 +100,7 @@
 
 
     .tabs-carousel {
-        width: 120% !important;
+        width: 112% !important;
         margin-left: -36px;
         margin-top: 15px !important;
     }
@@ -125,5 +125,33 @@
         a {
             color: black !important;
         }
+    }
+
+    .faq {
+        font-size: 20px !important;
+    }
+
+    .accordion {
+        h3 {
+            font-size: 19px !important;
+        }
+
+        p {
+            font-size: 12px !important;
+            line-height: 32px !important;
+        }
+    }
+
+    .only-mobile {
+        display: block;
+    }
+
+    .only-desktop {
+        display: none;
+    }
+
+    .container-fluid {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
     }
 }
