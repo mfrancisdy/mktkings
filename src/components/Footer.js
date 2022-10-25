@@ -4,7 +4,7 @@ import { Link } from '@reach/router';
 
 export default function Footer() {
     return (
-        <footer className="text-center text-lg-start bg-dark text-muted marketking-footer">
+        <footer className="text-center text-lg-start bg-dark text-muted marketking-footer" id="footer">
             <section className="">
                 <div className="container text-center text-md-start mt-5">
                     <div className="row mt-3">
