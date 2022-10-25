@@ -11,7 +11,7 @@ export default function NavPath() {
             <Header />
             <Routes>
                 <Route path="/" exact element={<Home />} />
-                <Route path="/hometwo" exact element={<HomeTwo />} />
+                <Route path="/hometwo/" exact element={<HomeTwo />} />
             </Routes>
             <Footer />
         </Router>

@@ -27,11 +27,11 @@ export default function Header() {
                             </Offcanvas.Header>
                             <Offcanvas.Body>
                                 <Nav className="justify-content-end flex-grow-1 pe-3">
-                                    <Nav.Link to="/">Home</Nav.Link>
-                                    <Nav.Link href="#discover">Discover</Nav.Link>
-                                    <Nav.Link href="#about">About us</Nav.Link>
-                                    <Nav.Link href="#service">Service</Nav.Link>
-                                    <Nav.Link href="#/">Contact us</Nav.Link>
+                                    <Nav.Link className='headermenu' to="/">Home</Nav.Link>
+                                    <Nav.Link className='headermenu' href="#service">Service</Nav.Link>
+                                    <Nav.Link className='headermenu' href="#projects">Projects</Nav.Link>
+                                    <Nav.Link className='headermenu' href="#faq">FAQ</Nav.Link>
+                                    <Nav.Link className='headermenu' href="#footer">Contact us</Nav.Link>
                                 </Nav>
 
                             </Offcanvas.Body>
