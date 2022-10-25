@@ -59,7 +59,7 @@ export default function Home() {
                     <div className='row'>
                         <div className='col-md-12'>
                             <h2 className='text-center' style={{ fontWeight: '700', lineHeight: '86px' }}>Marketing from MarketKings™</h2>
-                            <p className='text-center px-5'>MarketKings™ is a development and marketing suite dedicated to helping EVM projects raise capital and provide utility to their token holders.</p>
+                            <p className='text-center'>MarketKings™ is a development and marketing suite dedicated to helping EVM projects raise capital and provide utility to their token holders.</p>
                         </div>
                     </div>
                     <div className='row socialIcons'>

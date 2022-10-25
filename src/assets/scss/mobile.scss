@@ -49,7 +49,8 @@
     }
 
     .row .scroll1Btn {
-        text-align: center !important;
+        text-align: left;
+        padding: 16px 10px;
     }
 
     .p-0 {
@@ -156,18 +157,30 @@
     }
 
     .exploreBtn {
-        width: 50% !important;
+        width: 90% !important;
     }
 
     .contactBtn {
-        width: 50% !important;
+        width: 90% !important;
     }
 
     .scroll5 {
-        padding: 40px 0 !important;
+        padding: 30vh 0 0 0;
     }
 
     .scroll6 {
         padding: 90px 0 !important;
+    }
+    .px-5{
+        padding:0 !important;
+    }
+    .scroll2 {
+        padding: 40px 0;
+    }
+    button.exploreBtn {
+        height: 46.39px;
+    }
+    button.contactBtn {
+        height: 46.39px;
     }
 }
