@@ -31,7 +31,7 @@ export default function Header() {
                                     <Nav.Link href="#discover">Discover</Nav.Link>
                                     <Nav.Link href="#about">About us</Nav.Link>
                                     <Nav.Link href="#service">Service</Nav.Link>
-                                    <Nav.Link href="#/">Contact us</Nav.Link>
+                                    <Nav.Link href="#footer">Contact us</Nav.Link>
                                 </Nav>
 
                             </Offcanvas.Body>
