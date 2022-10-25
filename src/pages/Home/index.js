@@ -211,7 +211,7 @@ export default function Home() {
                         </div>
                     </div>
                     <div className="row">
-                        <div style={{ padding: '90px 0' }} className="col-md-12">
+                        <div className="col-md-12">
                             <Accordion />
                         </div>
                     </div>
