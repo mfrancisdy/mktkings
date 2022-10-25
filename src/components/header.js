@@ -11,7 +11,7 @@ export default function Header() {
 
         <>
             {['xxl'].map((expand) => (
-                <Navbar key={expand} expand={expand} className="mb-3 headermenu">
+                <Navbar key={expand} expand={expand} className="mb-3 headermenu  sticky-top" fixedTop>
                     <Container fluid>
                         <Navbar.Brand><img src={MainLogo} alt="logo" /></Navbar.Brand>
                         <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
@@ -27,13 +27,12 @@ export default function Header() {
                             </Offcanvas.Header>
                             <Offcanvas.Body>
                                 <Nav className="justify-content-end flex-grow-1 pe-3">
-                                    <Nav.Link className='headermenu' to="/">Home</Nav.Link>
+                                    <Nav.Link className='headermenu' href="/">Home</Nav.Link>
                                     <Nav.Link className='headermenu' href="#service">Service</Nav.Link>
                                     <Nav.Link className='headermenu' href="#projects">Projects</Nav.Link>
                                     <Nav.Link className='headermenu' href="#faq">FAQ</Nav.Link>
                                     <Nav.Link className='headermenu' href="#footer">Contact us</Nav.Link>
                                 </Nav>
-
                             </Offcanvas.Body>
                         </Navbar.Offcanvas>
                     </Container>
