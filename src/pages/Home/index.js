@@ -31,13 +31,13 @@ export default function Home() {
                                     </div>
                                 </div>
                                 <div className='row scroll1Btn'>
-                                    <div className="col-md-6 p-0">
+                                    <div className="col-6 col-md-6 p-0">
                                         <Link to="/explore">
                                             <button className='btn btn-block exploreBtn'>Explore</button>
                                         </Link>
 
                                     </div>
-                                    <div className="col-md-6 p-0">
+                                    <div className="col-6 col-md-6 p-0">
                                         <Link to="/contact">
                                             <button className='btn btn-block contactBtn'>Contact Us</button>
                                         </Link>
