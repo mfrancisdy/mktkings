@@ -28,9 +28,9 @@ export default function Header() {
                             <Offcanvas.Body>
                                 <Nav className="justify-content-end flex-grow-1 pe-3">
                                     <Nav.Link to="/">Home</Nav.Link>
-                                    <Nav.Link href="#discover">Discover</Nav.Link>
-                                    <Nav.Link href="#about">About us</Nav.Link>
-                                    <Nav.Link href="#service">Service</Nav.Link>
+                                    <Nav.Link href="#service">Services</Nav.Link>
+                                    <Nav.Link href="#about">Projects</Nav.Link>
+                                    <Nav.Link href="#service">FAQ</Nav.Link>
                                     <Nav.Link href="#/">Contact us</Nav.Link>
                                 </Nav>
 
