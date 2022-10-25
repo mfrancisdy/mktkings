@@ -9,36 +9,38 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 
 export default function Header() {
 
+    const closecanvas = () => {
+        setTimeout(() => {
+            var classes = document.getElementsByClassName('btn-close');
+            var button = classes[0];
+            button.click();
+        }, 1000);
+    }
+
+
+
     const Projects = () => {
-        var classes = document.getElementsByClassName('btn-close');
-        var button = classes[0];
-        button.click();
         var elmntToView = document.getElementById("projects");
         elmntToView.scrollIntoView();
+        closecanvas()
     }
 
     const Service = () => {
-        var classes = document.getElementsByClassName('btn-close');
-        var button = classes[0];
-        button.click();
         var elmntToView = document.getElementById("service");
         elmntToView.scrollIntoView();
+        closecanvas()
     }
 
     const FAQ = () => {
-        var classes = document.getElementsByClassName('btn-close');
-        var button = classes[0];
-        button.click();
         var elmntToView = document.getElementById("faq");
         elmntToView.scrollIntoView();
+        closecanvas()
     }
 
     const contact = () => {
-        var classes = document.getElementsByClassName('btn-close');
-        var button = classes[0];
-        button.click();
         var elmntToView = document.getElementById("footer");
         elmntToView.scrollIntoView();
+        closecanvas()
     }
 
     return (
