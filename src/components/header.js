@@ -6,7 +6,41 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 
+
 export default function Header() {
+
+    const Projects = () => {
+        var classes = document.getElementsByClassName('btn-close');
+        var button = classes[0];
+        button.click();
+        var elmntToView = document.getElementById("projects");
+        elmntToView.scrollIntoView();
+    }
+
+    const Service = () => {
+        var classes = document.getElementsByClassName('btn-close');
+        var button = classes[0];
+        button.click();
+        var elmntToView = document.getElementById("service");
+        elmntToView.scrollIntoView();
+    }
+
+    const FAQ = () => {
+        var classes = document.getElementsByClassName('btn-close');
+        var button = classes[0];
+        button.click();
+        var elmntToView = document.getElementById("faq");
+        elmntToView.scrollIntoView();
+    }
+
+    const contact = () => {
+        var classes = document.getElementsByClassName('btn-close');
+        var button = classes[0];
+        button.click();
+        var elmntToView = document.getElementById("footer");
+        elmntToView.scrollIntoView();
+    }
+
     return (
 
         <>
@@ -28,10 +62,10 @@ export default function Header() {
                             <Offcanvas.Body>
                                 <Nav className="justify-content-end flex-grow-1 pe-3">
                                     <Nav.Link className='headermenu' href="/">Home</Nav.Link>
-                                    <Nav.Link className='headermenu' href="#service">Service</Nav.Link>
-                                    <Nav.Link className='headermenu' href="#projects">Projects</Nav.Link>
-                                    <Nav.Link className='headermenu' href="#faq">FAQ</Nav.Link>
-                                    <Nav.Link className='headermenu' href="#footer">Contact us</Nav.Link>
+                                    <Nav.Link onClick={Service} className='headermenu' href="">Service</Nav.Link>
+                                    <Nav.Link onClick={Projects} className='headermenu' href="">Projects</Nav.Link>
+                                    <Nav.Link onClick={FAQ} className='headermenu' href="">FAQ</Nav.Link>
+                                    <Nav.Link onClick={contact} className='headermenu' href="">Contact us</Nav.Link>
                                 </Nav>
                             </Offcanvas.Body>
                         </Navbar.Offcanvas>
