@@ -68,7 +68,7 @@ function Tabs() {
             <Carousel.Item>
               <img
                 className="d-block w-100"
-                src={SliderImage}
+                src="https://themasterchefs.org/hush.png"
                 alt="Second slide"
               />
             </Carousel.Item>
@@ -88,14 +88,14 @@ function Tabs() {
             <Carousel.Item>
               <img
                 className="d-block w-100"
-                src={SliderImage}
+                src="https://themasterchefs.org/rttdash.png"
                 alt="First slide"
               />
             </Carousel.Item>
             <Carousel.Item>
               <img
                 className="d-block w-100"
-                src={SliderImage}
+                src="https://themasterchefs.org/odadash.png"
                 alt="Second slide"
               />
             </Carousel.Item>
@@ -118,21 +118,21 @@ function Tabs() {
                   <Carousel.Item>
                     <img
                       className="d-block w-100"
-                      src={SliderImage}
+                      src="https://themasterchefs.org/kishidash.png"
                       alt="First slide"
                     />
                   </Carousel.Item>
                   <Carousel.Item>
                     <img
                       className="d-block w-100"
-                      src={SliderImage}
+                      src="https://themasterchefs.org/stdash.png"
                       alt="Second slide"
                     />
                   </Carousel.Item>
                   <Carousel.Item>
                     <img
                       className="d-block w-100"
-                      src={SliderImage}
+                      src="https://themasterchefs.org/namidash.png"
                       alt="Third slide"
                     />
                   </Carousel.Item>
@@ -151,7 +151,7 @@ function Tabs() {
                   <Carousel.Item>
                     <img
                       className="d-block w-100"
-                      src={SliderImage}
+                      src="https://themasterchefs.org/namidash.png"
                       alt="First slide"
                     />
                   </Carousel.Item>
@@ -165,7 +165,7 @@ function Tabs() {
                   <Carousel.Item>
                     <img
                       className="d-block w-100"
-                      src={SliderImage}
+                      src="https://themasterchefs.org/hush.png"
                       alt="Third slide"
                     />
                   </Carousel.Item>

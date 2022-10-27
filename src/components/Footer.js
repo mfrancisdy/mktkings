@@ -3,6 +3,29 @@ import LogoDark from '../assets/Images/logo-dark.svg';
 import { Link } from '@reach/router';
 
 export default function Footer() {
+
+
+
+    const Projects = () => {
+        var elmntToView = document.getElementById("projects");
+        elmntToView.scrollIntoView();
+    }
+
+    const Service = () => {
+        var elmntToView = document.getElementById("service");
+        elmntToView.scrollIntoView();
+    }
+
+    const FAQ = () => {
+        var elmntToView = document.getElementById("faq");
+        elmntToView.scrollIntoView();
+    }
+
+    const contact = () => {
+        window.location.replace("http://T.me/MKTKing");
+    }
+
+
     return (
         <footer className="text-center text-lg-start bg-dark text-muted marketking-footer" id="footer">
             <section className="">
@@ -23,10 +46,10 @@ export default function Footer() {
                         </div>
                         <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                             <h6 className="fw-bold mb-4 footer-menu">Marketplace</h6>
-                            <Link className="footer-submenu" to="/"><p className="footer-submenu">Explore</p></Link>
-                            <Link className="footer-submenu" to="/"><p className="footer-submenu">Articles</p></Link>
-                            <Link className="footer-submenu" to="/"><p className="footer-submenu">How It Works</p></Link>
-                            <Link className="footer-submenu" to="/"><p className="footer-submenu">Help</p></Link>
+                            <Link className="footer-submenu" onClick={Service} to="/"><p className="footer-submenu">Service</p></Link>
+                            <Link className="footer-submenu" onClick={Projects} to="/"><p className="footer-submenu">Projects</p></Link>
+                            <Link className="footer-submenu" onClick={FAQ} to="/"><p className="footer-submenu">FAQ</p></Link>
+                            <Link className="footer-submenu" onClick={contact} to="" ><p className="footer-submenu">Contact us</p></Link>
                         </div>
                     </div>
                 </div>

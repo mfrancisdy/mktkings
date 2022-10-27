@@ -17,8 +17,6 @@ export default function Header() {
         }, 1000);
     }
 
-
-
     const Projects = () => {
         var elmntToView = document.getElementById("projects");
         elmntToView.scrollIntoView();
@@ -37,11 +35,6 @@ export default function Header() {
         closecanvas()
     }
 
-    const contact = () => {
-        var elmntToView = document.getElementById("footer");
-        elmntToView.scrollIntoView();
-        closecanvas()
-    }
 
     return (
 
@@ -67,7 +60,7 @@ export default function Header() {
                                     <Nav.Link onClick={Service} className='headermenu' href="">Service</Nav.Link>
                                     <Nav.Link onClick={Projects} className='headermenu' href="">Projects</Nav.Link>
                                     <Nav.Link onClick={FAQ} className='headermenu' href="">FAQ</Nav.Link>
-                                    <Nav.Link onClick={contact} className='headermenu' href="">Contact us</Nav.Link>
+                                    <Nav.Link href="http://T.me/MKTKing" target="_blank" className='headermenu'>Contact us</Nav.Link>
                                 </Nav>
                             </Offcanvas.Body>
                         </Navbar.Offcanvas>

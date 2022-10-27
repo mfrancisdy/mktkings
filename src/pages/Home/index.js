@@ -11,6 +11,18 @@ export default function Home() {
     const onCallback = () => {
     };
 
+
+    const Projects = () => {
+        var elmntToView = document.getElementById("discover");
+        elmntToView.scrollIntoView();
+    }
+
+    const About = () => {
+        var elmntToView = document.getElementById("abouttwo");
+        elmntToView.scrollIntoView();
+    }
+
+
     return (
         <>
             <section className='scroll1 hometop-section'>
@@ -32,14 +44,14 @@ export default function Home() {
                                 </div>
                                 <div className='row scroll1Btn'>
                                     <div className="col-6 col-md-6 p-0">
-                                        <Link to="/explore">
-                                            <button className='btn btn-block exploreBtn'>Explore</button>
+                                        <Link to="">
+                                            <button onClick={Projects} className='btn btn-block exploreBtn'>Explore</button>
                                         </Link>
 
                                     </div>
                                     <div className="col-6 col-md-6 p-0">
                                         <Link to="/contact">
-                                            <button className='btn btn-block contactBtn'>Contact Us</button>
+                                            <button onClick={About} className='btn btn-block contactBtn'>Contact Us</button>
                                         </Link>
                                     </div>
                                 </div>
@@ -149,7 +161,7 @@ export default function Home() {
                                 <br /><br />Twitter influencers are notoriously ineffective. We would only recommend working with the top, top influencers which we can connect large budget projects with. We recommend you avoid all ‘Giveaway’ twitter channels which are only beneficial if you care about member count.</p>
                         </div>
                     </div>
-                    <div className="row scroll3Row">
+                    <div className="row scroll3Row" id="abouttwo">
                         <div className='col-md-6 scroll3Img only-mobile'>
                             <img src='./img/scroll302.png' alt='img3' />
                         </div>
