@@ -31,7 +31,7 @@ export default function Home() {
             SetHeading("Twitch")
             SetBodytext(`One of our most successful ways of marketing is through Mass dms. We go the extra mile by writing your content for you, and choosing the most effective telgrams for you to target. This includes recently successful Pinksale launches from the Pinksale leaderboard as well as telegrams within your tokens brand identity/niche.`)
         } else if (props === "TIK") {
-            SetHeading("Tok Tok")
+            SetHeading("Tik tok")
             SetBodytext(`Over our work with some meme / fan tokens we have established relationships with some of the top, real finance TikTokers. These influencers have audiences that know how to contribute to presales / trade on PancakeSwap and with posts on TikTok your project has the potential to reach unlimited people with the right traction and promotion.`)
         } else if (props === "AMA") {
             SetHeading("AMAs")
