@@ -1,24 +1,56 @@
-import React from "react";
+import React, { useState } from 'react';
 import SliderAvatar from '../../assets/Images/slider-avatar.svg';
 import TimelineObserver from "react-timeline-animation";
 import Timeline from "../../components/timeline";
 import { Link } from '@reach/router';
 import Tabs from "../../components/tabs";
 import Accordion from "../../components/accordion";
+import Modal from 'react-bootstrap/Modal';
+
 
 export default function Home() {
+
+    const [show, setShow] = useState(false);
+    const [heading, SetHeading] = useState(false);
+    const [bodytext, SetBodytext] = useState(false);
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
 
     const onCallback = () => {
     };
 
+    const Setcontent = (props) => {
+        if (props === "TL") {
+            SetHeading("Telegram")
+            SetBodytext("Our founders work with top tier call channels and can arrange discounted posts leading up to your launch. Organising calls with MarketKings™ is more effective than trying to organise them yourselves as we know the right telegrams to target.")
+        } else if (props === "CMC") {
+            SetHeading("Coinmarketcap")
+            SetBodytext(`We can handle CMC/CG listings for projects incubated by us at the lowest rates on market. 
+            We have handled CEX listings on Bitmart & CoinTiger and have connections with many major CEXs`);
+        } else if (props === "DM") {
+            SetHeading("Twitch")
+            SetBodytext(`One of our most successful ways of marketing is through Mass dms. We go the extra mile by writing your content for you, and choosing the most effective telgrams for you to target. This includes recently successful Pinksale launches from the Pinksale leaderboard as well as telegrams within your tokens brand identity/niche.`)
+        } else if (props === "TIK") {
+            SetHeading("Tok Tok")
+            SetBodytext(`Over our work with some meme / fan tokens we have established relationships with some of the top, real finance TikTokers. These influencers have audiences that know how to contribute to presales / trade on PancakeSwap and with posts on TikTok your project has the potential to reach unlimited people with the right traction and promotion.`)
+        } else if (props === "AMA") {
+            SetHeading("AMAs")
+            SetBodytext(`At the moment, AMA’s are only solid for community spirit. They don’t bring any buys / ROI so while we can help organise them for your project at discounted rates, we do not recommend them.`)
+        } else if (props === "SHL") {
+            SetHeading("Shilling")
+            SetBodytext(`MKTKings has a shill army of over 100+ people who take time to understand the project and shill in the most effective way. This does not mean spamming the same shill message to chats where there are no investors, but targeting specific and relevant tweets and helping the project trend across all socials as well as reach parts of telegram where investors are waiting for the next gem.`)
+        } else if (props === "TWITT") {
+            SetHeading("Twitter")
+            SetBodytext(`Twitter influencers are notoriously ineffective. We would only recommend working with the top, top influencers which we can connect large budget projects with. We recommend you avoid all ‘Giveaway’ twitter channels which are only beneficial if you care about member count.`)
+        } else if (props === "YOUTUBE") {
+            SetHeading("Youtube")
+            SetBodytext(`We have connections with YouTube influencers that can make reviews on their projects no matter what your budget.`)
+        }
+        handleShow()
+    }
 
     const Projects = () => {
         var elmntToView = document.getElementById("discover");
-        elmntToView.scrollIntoView();
-    }
-
-    const About = () => {
-        var elmntToView = document.getElementById("abouttwo");
         elmntToView.scrollIntoView();
     }
 
@@ -50,9 +82,9 @@ export default function Home() {
 
                                     </div>
                                     <div className="col-6 col-md-6 p-0">
-                                        <Link to="/contact">
-                                            <button onClick={About} className='btn btn-block contactBtn'>Contact Us</button>
-                                        </Link>
+                                        <a href="http://T.me/MKTKing" target="_blank">
+                                            <button className='btn btn-block contactBtn'>Contact Us</button>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -74,78 +106,77 @@ export default function Home() {
                             <p className='text-center'>MarketKings™ is a development and marketing suite dedicated to helping EVM projects raise capital and provide utility to their token holders.</p>
                         </div>
                     </div>
+
                     <div className='row socialIcons'>
                         <div className='col-md-12'>
                             <div className="row" style={{ justifyContent: 'center' }}>
-                                <div className='iconBoxContainer col-md-2'>
-                                    <div className='iconBox'>
-                                        <img src='./img/insta.png' alt='instgram' />
-                                    </div>
-                                    <div className='iconBoxText'>Instagram</div>
-                                </div>
-                                <div className='iconBoxContainer col-md-2'>
+
+                                <div onClick={() => Setcontent("TL")} className='iconBoxContainer col-6 col-md-2'>
                                     <div className='iconBox'>
                                         <img src='./img/tgram.png' alt='telegram' />
                                     </div>
                                     <div className='iconBoxText'>Telegram</div>
                                 </div>
-                                <div className='iconBoxContainer col-md-2'>
+                                <div onClick={() => Setcontent("CMC")} className='iconBoxContainer text-center col-6 col-md-2'>
                                     <div className='iconBox'>
-                                        <img src='./img/twitter.png' alt='twitter' />
+                                        <img src='./img/cmcap.png' alt='coinmarketcap' />
                                     </div>
-                                    <div className='iconBoxText'>Twitter</div>
+                                    <div className='iconBoxText'>Coinmarketcap</div>
                                 </div>
-                                <div className='iconBoxContainer col-md-2'>
+                                <div onClick={() => Setcontent("CMC")} className='iconBoxContainer text-center col-6 col-md-2'>
                                     <div className='iconBox'>
-                                        <img src='./img/youtube.png' alt='youtube' />
+                                        <img src='./img/coingecko.png' alt='coingecko' />
                                     </div>
-                                    <div className='iconBoxText'>Youtube</div>
+                                    <div className='iconBoxText'>Coingecko</div>
                                 </div>
-                                <div className='iconBoxContainer col-md-2'>
+                                <div onClick={() => Setcontent("DM")} className='iconBoxContainer text-center col-6 col-md-2'>
+                                    <div className='iconBox'>
+                                        <img src='./img/twitch.png' alt='twitch' />
+                                    </div>
+                                    <div className='iconBoxText'>Twitch</div>
+                                </div>
+                                <div onClick={() => Setcontent("TIK")} className='iconBoxContainer col-6 col-md-2 tiktok'>
                                     <div className='iconBox'>
                                         <img src='./img/tiktok.png' alt='tiktok' />
                                     </div>
                                     <div className='iconBoxText'>Tiktok</div>
                                 </div>
+
                             </div>
                         </div>
                     </div>
                     <div className="row socialIcons">
                         <div className="col-md-12">
                             <div className="row" style={{ justifyContent: 'center' }}>
-                                <div className='iconBoxContainer text-center col-md-2'>
+                                <div onClick={() => Setcontent("AMA")} className='iconBoxContainer text-center col-6 col-md-2'>
                                     <div className='iconBox'>
                                         <img src='./img/twitch.png' alt='twitch' />
                                     </div>
-                                    <div className='iconBoxText'>Twitch</div>
+                                    <div className='iconBoxText'>AMA's</div>
                                 </div>
-                                <div className='iconBoxContainer text-center col-md-2'>
-                                    <div className='iconBox'>
-                                        <img src='./img/cmcap.png' alt='coinmarketcap' />
-                                    </div>
-                                    <div className='iconBoxText'>Coinmarketcap</div>
-                                </div>
-                                <div className='iconBoxContainer text-center col-md-2'>
-                                    <div className='iconBox'>
-                                        <img src='./img/coingecko.png' alt='coingecko' />
-                                    </div>
-                                    <div className='iconBoxText'>Coingecko</div>
-                                </div>
-                                <div className='iconBoxContainer text-center col-md-2'>
+
+                                <div onClick={() => Setcontent("SHL")} className='iconBoxContainer text-center col-6 col-md-2'>
                                     <div className='iconBox'>
                                         <img src='./img/insta.png' alt='instgram' />
                                     </div>
-                                    <div className='iconBoxText'>Instagram</div>
+                                    <div className='iconBoxText'>shilling</div>
                                 </div>
-                                <div className='iconBoxContainer text-center col-md-2'>
+                                <div onClick={() => Setcontent("TWITT")} className='iconBoxContainer col-6 col-md-2'>
                                     <div className='iconBox'>
-                                        <img src='./img/insta.png' alt='instgram' />
+                                        <img src='./img/twitter.png' alt='twitter' />
                                     </div>
-                                    <div className='iconBoxText'>Instagram</div>
+                                    <div className='iconBoxText'>Twitter</div>
+                                </div>
+                                <div onClick={() => Setcontent("YOTUBE")} className='iconBoxContainer col-6 col-md-2'>
+                                    <div className='iconBox'>
+                                        <img src='./img/youtube.png' alt='youtube' />
+                                    </div>
+                                    <div className='iconBoxText'>Youtube</div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
             </section>
 
@@ -230,6 +261,22 @@ export default function Home() {
                 </div>
             </section>
 
+            <Modal
+                show={show}
+                onHide={handleClose}
+                backdrop="static"
+                keyboard={false}
+                className="modal-layout"
+            >
+                <div className="modal-body-content">
+                    <Modal.Header closeButton>
+                        <Modal.Title><center>{heading}</center></Modal.Title>
+                    </Modal.Header>
+                    <Modal.Body>
+                        {bodytext}
+                    </Modal.Body>
+                </div>
+            </Modal>
 
             {/* <section className="getmoreupdate-section">
                 <div className="container">

@@ -175,6 +175,7 @@ button.contactBtn {
 
 .iconBoxContainer {
     margin: '0 auto';
+    cursor: pointer;
     text-align: center;
 }
 
@@ -379,4 +380,37 @@ button.accordion-button.collapsed {
 
 .sticky-top {
     background: #1D1B1B !important;
+}
+
+.modal-layout {
+    padding: 40px;
+    margin-top: 100px;
+}
+
+.modal-content {
+    text-align: center;
+    background: #161515 !important;
+    border: 1px solid #D39952 !important;
+    color: white !important;
+}
+
+.modal-header {
+    color: #D39952 !important;
+    font-weight: 900;
+}
+
+.btn-close {
+    background-image: url("https://www.freeiconspng.com/thumbs/close-icon/close-icon-29.png") !important;
+    border: 2px solid #D39952 !important;
+    border-radius: 50% !important;
+}
+
+.modal-body {
+    font-weight: 400;
+    font-size: 17px;
+    text-transform: capitalize;
+}
+
+.modal-body-content {
+    padding: 50px;
 }
