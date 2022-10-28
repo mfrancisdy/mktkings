@@ -3,19 +3,23 @@ import SliderAvatar from '../../assets/Images/Hometwo/image01.svg';
 import ImgTwo from '../../assets/Images/Hometwo/_0001.svg'
 import Imgthree from '../../assets/Images/Hometwo/_0006.svg'
 import TimelineObserver from "react-timeline-animation";
-import { Link } from '@reach/router';
 import Timeline from "../../components/timeline";
+import { Link } from '@reach/router';
 import Tabs from "../../components/tabs";
 import Accordion from "../../components/accordion";
 import Modal from 'react-bootstrap/Modal';
 
+
 export default function Home() {
 
     const [show, setShow] = useState(false);
-    const handleClose = () => setShow(false);
     const [heading, SetHeading] = useState(false);
     const [bodytext, SetBodytext] = useState(false);
+    const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
+
+    const onCallback = () => {
+    };
 
     const Setcontent = (props) => {
         if (props === "TL") {
@@ -29,7 +33,7 @@ export default function Home() {
             SetHeading("Twitch")
             SetBodytext(`One of our most successful ways of marketing is through Mass dms. We go the extra mile by writing your content for you, and choosing the most effective telgrams for you to target. This includes recently successful Pinksale launches from the Pinksale leaderboard as well as telegrams within your tokens brand identity/niche.`)
         } else if (props === "TIK") {
-            SetHeading("Tok Tok")
+            SetHeading("Tik tok")
             SetBodytext(`Over our work with some meme / fan tokens we have established relationships with some of the top, real finance TikTokers. These influencers have audiences that know how to contribute to presales / trade on PancakeSwap and with posts on TikTok your project has the potential to reach unlimited people with the right traction and promotion.`)
         } else if (props === "AMA") {
             SetHeading("AMAs")
@@ -47,13 +51,11 @@ export default function Home() {
         handleShow()
     }
 
-    const onCallback = () => {
-    };
-
     const Projects = () => {
         var elmntToView = document.getElementById("discover");
         elmntToView.scrollIntoView();
     }
+
 
     return (
         <>
@@ -98,16 +100,14 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className='scroll2'>
+            <section className='scroll2' id="discover">
                 <div className='container'>
                     <div className='row'>
                         <div className='col-md-12'>
                             <h2 className='text-center' style={{ fontWeight: '700', lineHeight: '86px' }}>Marketing from MarketKings™</h2>
-                            <p className='text-center px-5'>MarketKings™ is a development and marketing suite dedicated to helping EVM projects raise capital and provide utility to their token holders.</p>
+                            <p className='text-center'>MarketKings™ is a development and marketing suite dedicated to helping EVM projects raise capital and provide utility to their token holders.</p>
                         </div>
                     </div>
-
-
 
                     <div className='row socialIcons'>
                         <div className='col-md-12'>
@@ -169,7 +169,7 @@ export default function Home() {
                                     </div>
                                     <div className='iconBoxText'>Twitter</div>
                                 </div>
-                                <div onClick={() => Setcontent("YOTUBE")} className='iconBoxContainer col-6 col-md-2'>
+                                <div onClick={() => Setcontent("YOUTUBE")} className='iconBoxContainer col-6 col-md-2'>
                                     <div className='iconBox'>
                                         <img src='./img/youtube.png' alt='youtube' />
                                     </div>
@@ -182,7 +182,7 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className="scroll3">
+            <section className="scroll3" id="about">
                 <div className="container">
                     <div className="row scroll3Row">
                         <div className='col-md-6 scroll3Img'>
@@ -194,19 +194,21 @@ export default function Home() {
                                 <br /><br />Twitter influencers are notoriously ineffective. We would only recommend working with the top, top influencers which we can connect large budget projects with. We recommend you avoid all ‘Giveaway’ twitter channels which are only beneficial if you care about member count.</p>
                         </div>
                     </div>
-                    <div className="row scroll3Row">
+                    <div className="row scroll3Row" id="abouttwo">
+                        <div className='col-md-6 scroll3Img only-mobile'>
+                            <img src={Imgthree} alt='img3' />
+                        </div>
                         <div className='col-md-6 scroll3Col2'>
                             <h2 className='scroll3title'>We turn your ideas into a reality within DeFi</h2>
                             <p className='scroll3-p'>We at MKTKings have our very own full-time development team. We are able to offer the most competitive rates and quickest turnover times in the space when it comes to creating DAPPs.</p>
                             <button className='btn scrollBtn'>Explore</button>
                         </div>
-                        <div className='col-md-6 scroll3Img'>
+                        <div className='col-md-6 scroll3Img only-desktop'>
                             <img src={Imgthree} alt='img3' />
                         </div>
                     </div>
                 </div>
             </section>
-
             <section className='scroll4' id="service">
                 <div className="container">
                     <div className="row">
@@ -250,11 +252,11 @@ export default function Home() {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12">
-                            <h2 className='text-center py-4 title'>Frequently asked questions</h2>
+                            <h2 className='text-center py-4 title faq'>Frequently asked questions</h2>
                         </div>
                     </div>
                     <div className="row">
-                        <div style={{ padding: '90px 0' }} className="col-md-12">
+                        <div className="col-md-12">
                             <Accordion />
                         </div>
                     </div>
@@ -270,14 +272,13 @@ export default function Home() {
             >
                 <div className="modal-body-content">
                     <Modal.Header closeButton>
-                        <Modal.Title><center>HEADING OF MODAL</center></Modal.Title>
+                        <Modal.Title><center>{heading}</center></Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
-                        Our founders work with top tier call channels and can arrange discounted posts leading up to your launch. Organising calls with MarketKings™ is more effective than trying to organise them yourselves as we know the right telegrams to target.
+                        {bodytext}
                     </Modal.Body>
                 </div>
             </Modal>
-
 
             {/* <section className="getmoreupdate-section">
                 <div className="container">
