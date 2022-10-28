@@ -167,7 +167,7 @@ export default function Home() {
                                     </div>
                                     <div className='iconBoxText'>Twitter</div>
                                 </div>
-                                <div onClick={() => Setcontent("YOTUBE")} className='iconBoxContainer col-6 col-md-2'>
+                                <div onClick={() => Setcontent("YOUTUBE")} className='iconBoxContainer col-6 col-md-2'>
                                     <div className='iconBox'>
                                         <img src='./img/youtube.png' alt='youtube' />
                                     </div>
