@@ -121,25 +121,25 @@ export default function Home() {
                                     <div className='iconBox'>
                                         <img src='./img/cmcap.png' alt='coinmarketcap' />
                                     </div>
-                                    <div className='iconBoxText'>Coinmarketcap</div>
+                                    <div className='iconBoxText'>CoinMarketCap</div>
                                 </div>
                                 <div onClick={() => Setcontent("CMC")} className='iconBoxContainer text-center col-6 col-md-2'>
                                     <div className='iconBox'>
                                         <img src='./img/coingecko.png' alt='coingecko' />
                                     </div>
-                                    <div className='iconBoxText'>Coingecko</div>
+                                    <div className='iconBoxText'>CoinGecko</div>
                                 </div>
                                 <div onClick={() => Setcontent("DM")} className='iconBoxContainer text-center col-6 col-md-2'>
                                     <div className='iconBox'>
-                                        <img src='./img/twitch.png' alt='twitch' />
+                                        <img src='./img/mass.png' alt='twitch' />
                                     </div>
-                                    <div className='iconBoxText'>Twitch</div>
+                                    <div className='iconBoxText'>Mass dms</div>
                                 </div>
                                 <div onClick={() => Setcontent("TIK")} className='iconBoxContainer col-6 col-md-2 tiktok'>
                                     <div className='iconBox'>
                                         <img src='./img/tiktok.png' alt='tiktok' />
                                     </div>
-                                    <div className='iconBoxText'>Tiktok</div>
+                                    <div className='iconBoxText'>TIKTOK</div>
                                 </div>
 
                             </div>
@@ -150,14 +150,14 @@ export default function Home() {
                             <div className="row" style={{ justifyContent: 'center' }}>
                                 <div onClick={() => Setcontent("AMA")} className='iconBoxContainer text-center col-6 col-md-2'>
                                     <div className='iconBox'>
-                                        <img src='./img/twitch.png' alt='twitch' />
+                                        <img src='./img/question.png' alt='twitch' />
                                     </div>
                                     <div className='iconBoxText'>AMA's</div>
                                 </div>
 
                                 <div onClick={() => Setcontent("SHL")} className='iconBoxContainer text-center col-6 col-md-2'>
                                     <div className='iconBox'>
-                                        <img src='./img/insta.png' alt='instgram' />
+                                        <img src='./img/shilling.png' alt='instgram' />
                                     </div>
                                     <div className='iconBoxText'>shilling</div>
                                 </div>
