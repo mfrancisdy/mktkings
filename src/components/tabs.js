@@ -82,7 +82,7 @@ function Tabs() {
             <Carousel.Item>
               <img
                 className="d-block w-100"
-                src="https://themasterchefs.org/rttdash.png"
+                src="https://themasterchefs.org/namidash.png"
                 alt="First slide"
               />
             </Carousel.Item>
@@ -138,7 +138,7 @@ function Tabs() {
                   <Carousel.Item>
                     <img
                       className="d-block w-100"
-                      src="https://themasterchefs.org/namidash.png"
+                      src="https://themasterchefs.org/rttdash.png"
                       alt="First slide"
                     />
                   </Carousel.Item>
