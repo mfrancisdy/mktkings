@@ -26,7 +26,7 @@ export default function Home() {
 
     const Setcontent = (props) => {
         if (props === "TL") {
-            SetHeading("Telegram")
+            SetHeading("Call Channels")
             SetBodytext("Our founders work with top tier call channels and can arrange discounted posts leading up to your launch. Organising calls with MarketKings™ is more effective than trying to organise them yourselves as we know the right telegrams to target.")
         } else if (props === "CMC") {
             SetHeading("Coinmarketcap")
@@ -118,9 +118,9 @@ export default function Home() {
 
                                 <div onClick={() => Setcontent("TL")} className='iconBoxContainer col-6 col-md-2'>
                                     <div className='iconBox'>
-                                        <img src='./img/tgram.png' alt='telegram' />
+                                        <img src='./img/tgram.png' alt='Call channels' />
                                     </div>
-                                    <div className='iconBoxText'>Telegram</div>
+                                    <div className='iconBoxText'>Call channels</div>
                                 </div>
                                 <div onClick={() => Setcontent("CMC")} className='iconBoxContainer text-center col-6 col-md-2'>
                                     <div className='iconBox'>

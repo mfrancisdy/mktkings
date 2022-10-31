@@ -24,7 +24,7 @@ export default function Home() {
 
     const Setcontent = (props) => {
         if (props === "TL") {
-            SetHeading("Telegram")
+            SetHeading("Call Channels")
             SetBodytext("Our founders work with top tier call channels and can arrange discounted posts leading up to your launch. Organising calls with MarketKings™ is more effective than trying to organise them yourselves as we know the right telegrams to target.")
         } else if (props === "CMC") {
             SetHeading("Coinmarketcap")
@@ -116,9 +116,9 @@ export default function Home() {
 
                                 <div onClick={() => Setcontent("TL")} className='iconBoxContainer col-6 col-md-2'>
                                     <div className='iconBox'>
-                                        <img src='./img/tgram.png' alt='telegram' />
+                                        <img src='./img/tgram.png' alt='Call channels' />
                                     </div>
-                                    <div className='iconBoxText'>Telegram</div>
+                                    <div className='iconBoxText'>Call channels</div>
                                 </div>
                                 <div onClick={() => Setcontent("CMC")} className='iconBoxContainer text-center col-6 col-md-2'>
                                     <div className='iconBox'>
@@ -202,7 +202,7 @@ export default function Home() {
                         <div className='col-md-6 scroll3Col2'>
                             <h2 className='scroll3title'>We turn your ideas into a reality within DeFi</h2>
                             <p className='scroll3-p'>We at MKTKings have our very own full-time development team. We are able to offer the most competitive rates and quickest turnover times in the space when it comes to creating DAPPs.</p>
-                            <button className='btn scrollBtn'>Explore</button>
+                            <a href="http://T.me/MKTKing" target="_blank"><button className='btn scrollBtn'>Explore</button></a>
                         </div>
                         <div className='col-md-6 scroll3Img only-desktop'>
                             <img src='./img/scroll302.png' alt='img3' />

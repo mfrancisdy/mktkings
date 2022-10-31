@@ -3,6 +3,7 @@ import Carousel from 'react-bootstrap/Carousel';
 import SliderImage from '../assets/Images/Slider/work.svg';
 
 
+
 function Tabs() {
 
   const [openMenu, setOpenMenu] = React.useState("web");
@@ -72,13 +73,6 @@ function Tabs() {
                 alt="Second slide"
               />
             </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src={SliderImage}
-                alt="Third slide"
-              />
-            </Carousel.Item>
           </Carousel>
         </div>
       )}
@@ -97,13 +91,6 @@ function Tabs() {
                 className="d-block w-100"
                 src="https://themasterchefs.org/odadash.png"
                 alt="Second slide"
-              />
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src={SliderImage}
-                alt="Third slide"
               />
             </Carousel.Item>
           </Carousel>
@@ -153,13 +140,6 @@ function Tabs() {
                       className="d-block w-100"
                       src="https://themasterchefs.org/namidash.png"
                       alt="First slide"
-                    />
-                  </Carousel.Item>
-                  <Carousel.Item>
-                    <img
-                      className="d-block w-100"
-                      src={SliderImage}
-                      alt="Second slide"
                     />
                   </Carousel.Item>
                   <Carousel.Item>
