@@ -104,6 +104,7 @@ export default function Home() {
             </section>
 
             <section className='scroll2' id="discover">
+                <p>&nbsp;</p> <p>&nbsp;</p>
                 <div className='container'>
                     <div className='row'>
                         <div className='col-md-12'>
@@ -204,7 +205,7 @@ export default function Home() {
                         <div className='col-md-6 scroll3Col2'>
                             <h2 className='scroll3title'>We turn your ideas into a reality within DeFi</h2>
                             <p className='scroll3-p'>We at MKTKings have our very own full-time development team. We are able to offer the most competitive rates and quickest turnover times in the space when it comes to creating DAPPs.</p>
-                            <button className='btn scrollBtn'>Explore</button>
+                            <a href="http://T.me/MKTKing" target="_blank"><button className='btn scrollBtn'>Explore</button></a>
                         </div>
                         <div className='col-md-6 scroll3Img only-desktop'>
                             <img src={Imgthree} alt='img3' />

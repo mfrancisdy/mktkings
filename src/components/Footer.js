@@ -12,12 +12,12 @@ export default function Footer() {
     }
 
     const Service = () => {
-        var elmntToView = document.getElementById("service");
+        var elmntToView = document.getElementById("discover");
         elmntToView.scrollIntoView();
     }
 
     const FAQ = () => {
-        var elmntToView = document.getElementById("faq");
+        var elmntToView = document.getElementById("casestudy");
         elmntToView.scrollIntoView();
     }
 
@@ -45,10 +45,10 @@ export default function Footer() {
                         <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                         </div>
                         <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                            <h6 className="fw-bold mb-4 footer-menu">Marketplace</h6>
+                            <h6 className="fw-bold mb-4 footer-menu">Navigation</h6>
                             <Link className="footer-submenu" onClick={Service} to="/"><p className="footer-submenu">Service</p></Link>
                             <Link className="footer-submenu" onClick={Projects} to="/"><p className="footer-submenu">Projects</p></Link>
-                            <Link className="footer-submenu" onClick={FAQ} to="/"><p className="footer-submenu">FAQ</p></Link>
+                            <Link className="footer-submenu" onClick={FAQ} to="/"><p className="footer-submenu">Case Studies</p></Link>
                             <Link className="footer-submenu" onClick={contact} to="" ><p className="footer-submenu">Contact us</p></Link>
                         </div>
                     </div>

@@ -102,6 +102,7 @@ export default function Home() {
             </section>
 
             <section className='scroll2' id="discover">
+                <p>&nbsp;</p> <p>&nbsp;</p>
                 <div className='container'>
                     <div className='row'>
                         <div className='col-md-12'>
@@ -116,7 +117,7 @@ export default function Home() {
 
                                 <div onClick={() => Setcontent("TL")} className='iconBoxContainer col-6 col-md-2'>
                                     <div className='iconBox'>
-                                        <img src='./img/tgram.png' alt='Call channels' />
+                                        <img src='./img/tgram.png' alt='Call channels' />
                                     </div>
                                     <div className='iconBoxText'>Call channels</div>
                                 </div>

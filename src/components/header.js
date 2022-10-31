@@ -5,7 +5,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
-
+import { Link } from '@reach/router';
 
 export default function Header() {
 
@@ -24,13 +24,13 @@ export default function Header() {
     }
 
     const Service = () => {
-        var elmntToView = document.getElementById("service");
+        var elmntToView = document.getElementById("discover");
         elmntToView.scrollIntoView();
         closecanvas()
     }
 
     const FAQ = () => {
-        var elmntToView = document.getElementById("faq");
+        var elmntToView = document.getElementById("casestudy");
         elmntToView.scrollIntoView();
         closecanvas()
     }
@@ -42,7 +42,7 @@ export default function Header() {
             {['xxl'].map((expand) => (
                 <Navbar key={expand} expand={expand} className="mb-3 headermenu  sticky-top" fixedTop>
                     <Container fluid>
-                        <Navbar.Brand><img src={MainLogo} alt="logo" /></Navbar.Brand>
+                        <Navbar.Brand><Link to="/"><img src={MainLogo} alt="logo" /></Link></Navbar.Brand>
                         <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
                         <Navbar.Offcanvas
                             id={`offcanvasNavbar-expand-${expand}`}
@@ -51,16 +51,15 @@ export default function Header() {
                         >
                             <Offcanvas.Header closeButton>
                                 <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                                    <img src={LogoDark} alt="logo" />
+                                    <Link to="/"><img src={LogoDark} alt="logo" /></Link>
                                 </Offcanvas.Title>
                             </Offcanvas.Header>
                             <Offcanvas.Body>
                                 <Nav className="justify-content-end flex-grow-1 pe-3">
-                                    <Nav.Link className='headermenu' href="/">Home</Nav.Link>
                                     <Nav.Link onClick={Service} className='headermenu' href="">Service</Nav.Link>
                                     <Nav.Link onClick={Projects} className='headermenu' href="">Projects</Nav.Link>
-                                    <Nav.Link onClick={FAQ} className='headermenu' href="">FAQ</Nav.Link>
-                                    <Nav.Link href="http://T.me/MKTKing" target="_blank" className='headermenu'>Contact us</Nav.Link>
+                                    <Nav.Link onClick={FAQ} className='headermenu' href="">Case studies</Nav.Link>
+                                    <Nav.Link href="http://T.me/MKTKing" target="_blank" className='headermenu'>Contact Us</Nav.Link>
                                 </Nav>
                             </Offcanvas.Body>
                         </Navbar.Offcanvas>
