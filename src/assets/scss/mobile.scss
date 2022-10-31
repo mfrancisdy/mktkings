@@ -205,7 +205,13 @@
         margin-bottom: 50px;
     }
 
-    .scroll6 {
-        display: none;
+    .casestudy {
+        .card-body .h5 {
+            font-size: 1.30rem !important;
+        }
+
+        .card-text {
+            font-size: 15px !important;
+        }
     }
 }

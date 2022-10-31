@@ -8,6 +8,9 @@ import { Link } from '@reach/router';
 import Tabs from "../../components/tabs";
 import Accordion from "../../components/accordion";
 import Modal from 'react-bootstrap/Modal';
+import Card from 'react-bootstrap/Card';
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
 
 
 export default function Home() {
@@ -209,7 +212,7 @@ export default function Home() {
                     </div>
                 </div>
             </section>
-            <section className='scroll4' id="service">
+            {/* <section className='scroll4' id="service">
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12">
@@ -233,7 +236,7 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
             <section className='scroll5' id="projects">
                 <div className="container">
                     <div className="row">
@@ -248,7 +251,48 @@ export default function Home() {
                     </div>
                 </div>
             </section>
-            <section className='scroll6' id="faq">
+
+            <section className='scroll6 casestudy' id="casestudy">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-md-12">
+                            <h2 className='text-center py-4 title faq'>Case Studies</h2>
+                        </div>
+                    </div>
+                    <Row xs={1} md={2} className="g-4">
+
+                        <Col>
+                            <Card>
+                                <Card.Body>
+                                    <Card.Title>Case Study 1</Card.Title>
+                                    <Card.Text>
+                                        Our First  Public Case Study is Tate Token. With A Budget of $15,000 The Core
+                                        Team of MarketKings™ Raised 371BNB. Our Services Were Not just Pre Launch with This As We Took
+                                        Tate Token Up To $20m Market Cap (75x The Fair Launch) Before Some Legal Complications Due To The Name Of the Project.
+                                    </Card.Text>
+                                </Card.Body>
+                            </Card>
+
+                        </Col>
+
+                        <Col>
+                            <Card>
+                                <Card.Body>
+                                    <Card.Title>Case Study 2</Card.Title>
+                                    <Card.Text>
+                                        The Second Public Case Study We Have is MrBeast Fan Token. With A Budget of $20,000 The Core Team of MarketKings™
+                                        Raised Close to 900BNB. These Services Are Also not Just Pre Launch. As we Continue To Market MrBeast Fan Token (Currentlly At 3x)
+                                    </Card.Text>
+                                </Card.Body>
+                            </Card>
+
+                        </Col>
+
+                    </Row>
+                </div>
+            </section>
+
+            {/* <section className='scroll6' id="faq">
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12">
@@ -261,7 +305,7 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             <Modal
                 show={show}

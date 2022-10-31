@@ -414,3 +414,26 @@ button.accordion-button.collapsed {
 .modal-body-content {
     padding: 10px;
 }
+
+
+.card-body {
+    text-align: center !important;
+    height: 430px !important;
+
+
+    .h5 {
+        font-size: 2.25rem !important;
+        color: #D39952 !important;
+    }
+}
+
+.card-text {
+    color: white !important;
+    text-align: center !important;
+}
+
+.card {
+    background: #1D1B1B !important;
+    border-radius: 40px !important;
+    border: 1px solid #D39952 !important;
+}
