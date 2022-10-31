@@ -133,12 +133,7 @@ export default function Home() {
                                     </div>
                                     <div className='iconBoxText'>CoinGecko</div>
                                 </div>
-                                <div onClick={() => Setcontent("DM")} className='iconBoxContainer text-center col-6 col-md-2'>
-                                    <div className='iconBox'>
-                                        <img src='./img/mass.png' alt='twitch' />
-                                    </div>
-                                    <div className='iconBoxText'>Mass dms</div>
-                                </div>
+
                                 <div onClick={() => Setcontent("TIK")} className='iconBoxContainer col-6 col-md-2 tiktok'>
                                     <div className='iconBox'>
                                         <img src='./img/tiktok.png' alt='tiktok' />
@@ -152,11 +147,17 @@ export default function Home() {
                     <div className="row socialIcons">
                         <div className="col-md-12">
                             <div className="row" style={{ justifyContent: 'center' }}>
-                                <div onClick={() => Setcontent("AMA")} className='iconBoxContainer text-center col-6 col-md-2'>
+                                {/* <div onClick={() => Setcontent("AMA")} className='iconBoxContainer text-center col-6 col-md-2'>
                                     <div className='iconBox'>
                                         <img src='./img/question.png' alt='twitch' />
                                     </div>
                                     <div className='iconBoxText'>AMA's</div>
+                                </div> */}
+                                <div onClick={() => Setcontent("DM")} className='iconBoxContainer text-center col-6 col-md-2'>
+                                    <div className='iconBox'>
+                                        <img src='./img/mass.png' alt='twitch' />
+                                    </div>
+                                    <div className='iconBoxText'>Mass dms</div>
                                 </div>
 
                                 <div onClick={() => Setcontent("SHL")} className='iconBoxContainer text-center col-6 col-md-2'>
@@ -165,12 +166,12 @@ export default function Home() {
                                     </div>
                                     <div className='iconBoxText'>shilling</div>
                                 </div>
-                                <div onClick={() => Setcontent("TWITT")} className='iconBoxContainer col-6 col-md-2'>
+                                {/* <div onClick={() => Setcontent("TWITT")} className='iconBoxContainer col-6 col-md-2'>
                                     <div className='iconBox'>
                                         <img src='./img/twitter.png' alt='twitter' />
                                     </div>
                                     <div className='iconBoxText'>Twitter</div>
-                                </div>
+                                </div> */}
                                 <div onClick={() => Setcontent("YOUTUBE")} className='iconBoxContainer col-6 col-md-2'>
                                     <div className='iconBox'>
                                         <img src='./img/youtube.png' alt='youtube' />
@@ -196,6 +197,47 @@ export default function Home() {
                                 <br /><br />Twitter influencers are notoriously ineffective. We would only recommend working with the top, top influencers which we can connect large budget projects with. We recommend you avoid all ‘Giveaway’ twitter channels which are only beneficial if you care about member count.</p>
                         </div>
                     </div>
+
+                    <section className='scroll6 casestudy' id="casestudy">
+                        <div className="container">
+                            <div className="row">
+                                <div className="col-md-12">
+                                    <h2 className='text-center py-4 title faq'>Case Studies</h2>
+                                </div>
+                            </div>
+                            <Row xs={1} md={2} className="g-4">
+
+                                <Col>
+                                    <Card>
+                                        <Card.Body>
+                                            <Card.Title>Case Study 1</Card.Title>
+                                            <Card.Text>
+                                                Our First  Public Case Study is Tate Token. With A Budget of $15,000 The Core
+                                                Team of MarketKings™ Raised 371BNB. Our Services Were Not just Pre Launch with This As We Took
+                                                Tate Token Up To $20m Market Cap (75x The Fair Launch) Before Some Legal Complications Due To The Name Of the Project.
+                                            </Card.Text>
+                                        </Card.Body>
+                                    </Card>
+
+                                </Col>
+
+                                <Col>
+                                    <Card>
+                                        <Card.Body>
+                                            <Card.Title>Case Study 2</Card.Title>
+                                            <Card.Text>
+                                                The Second Public Case Study We Have is MrBeast Fan Token. With A Budget of $20,000 The Core Team of MarketKings™
+                                                Raised Close to 900BNB. These Services Are Also not Just Pre Launch. As we Continue To Market MrBeast Fan Token (Currentlly At 3x)
+                                            </Card.Text>
+                                        </Card.Body>
+                                    </Card>
+
+                                </Col>
+
+                            </Row>
+                        </div>
+                    </section>
+
                     <div className="row scroll3Row" id="abouttwo">
                         <div className='col-md-6 scroll3Img only-mobile'>
                             <img src='./img/scroll302.png' alt='img3' />
@@ -254,45 +296,7 @@ export default function Home() {
 
 
 
-            <section className='scroll6 casestudy' id="casestudy">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-md-12">
-                            <h2 className='text-center py-4 title faq'>Case Studies</h2>
-                        </div>
-                    </div>
-                    <Row xs={1} md={2} className="g-4">
 
-                        <Col>
-                            <Card>
-                                <Card.Body>
-                                    <Card.Title>Case Study 1</Card.Title>
-                                    <Card.Text>
-                                        Our First  Public Case Study is Tate Token. With A Budget of $15,000 The Core
-                                        Team of MarketKings™ Raised 371BNB. Our Services Were Not just Pre Launch with This As We Took
-                                        Tate Token Up To $20m Market Cap (75x The Fair Launch) Before Some Legal Complications Due To The Name Of the Project.
-                                    </Card.Text>
-                                </Card.Body>
-                            </Card>
-
-                        </Col>
-
-                        <Col>
-                            <Card>
-                                <Card.Body>
-                                    <Card.Title>Case Study 2</Card.Title>
-                                    <Card.Text>
-                                        The Second Public Case Study We Have is MrBeast Fan Token. With A Budget of $20,000 The Core Team of MarketKings™
-                                        Raised Close to 900BNB. These Services Are Also not Just Pre Launch. As we Continue To Market MrBeast Fan Token (Currentlly At 3x)
-                                    </Card.Text>
-                                </Card.Body>
-                            </Card>
-
-                        </Col>
-
-                    </Row>
-                </div>
-            </section>
 
 
             {/* <section className='scroll6' id="faq">
