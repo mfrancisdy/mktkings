@@ -6,17 +6,17 @@ import SliderImage from '../assets/Images/Slider/work.svg';
 
 function Tabs() {
 
-  const [openMenu, setOpenMenu] = React.useState("web");
+  const [openMenu, setOpenMenu] = React.useState("dash");
 
   const handleBtnClick = () => {
-    setOpenMenu("web");
+    setOpenMenu("dash");
     document.getElementById("Mainbtn").classList.add("li-active");
     document.getElementById("Mainbtn1").classList.remove("li-active");
     document.getElementById("Mainbtn2").classList.remove("li-active");
     document.getElementById("Mainbtn3").classList.remove("li-active");
   };
   const handleBtnClick1 = () => {
-    setOpenMenu("dash");
+    setOpenMenu("web");
     document.getElementById("Mainbtn1").classList.add("li-active");
     document.getElementById("Mainbtn").classList.remove("li-active");
     document.getElementById("Mainbtn3").classList.remove("li-active");
@@ -45,8 +45,8 @@ function Tabs() {
         <div className='col-lg-10' style={{ margin: '0 auto' }}>
           <div className="items_filter">
             <ul style={{ textAlign: 'center' }} className="de_nav text-left">
-              <li id='Mainbtn' className="li-active"><span onClick={handleBtnClick}>Website</span></li>
-              <li id='Mainbtn1' className=""><span onClick={handleBtnClick1}>Dashboard</span></li>
+              <li id='Mainbtn' className="li-active"><span onClick={handleBtnClick}>Dashboard</span></li>
+              <li id='Mainbtn1' className=""><span onClick={handleBtnClick1}>Website</span></li>
               <li id='Mainbtn2' className=""><span onClick={handleBtnClick2}>NFT Website</span></li>
               <li id='Mainbtn3' className=""><span onClick={handleBtnClick3}>Staking</span></li>
             </ul>
@@ -59,13 +59,6 @@ function Tabs() {
       {openMenu === "web" && (
         <div id='zero1' className='onStep px-5 fadeIn tabs-carousel'>
           <Carousel variant="dark">
-            <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src={SliderImage}
-                alt="First slide"
-              />
-            </Carousel.Item>
             <Carousel.Item>
               <img
                 className="d-block w-100"
@@ -82,15 +75,29 @@ function Tabs() {
             <Carousel.Item>
               <img
                 className="d-block w-100"
-                src="https://themasterchefs.org/namidash.png"
+                src="https://themasterchefs.org/rttdash.png"
                 alt="First slide"
               />
             </Carousel.Item>
             <Carousel.Item>
               <img
                 className="d-block w-100"
-                src="https://themasterchefs.org/odadash.png"
+                src="https://themasterchefs.org/kishidash.png"
+                alt="First slide"
+              />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src="https://themasterchefs.org/stdash.png"
                 alt="Second slide"
+              />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src="https://themasterchefs.org/hush.png"
+                alt="Third slide"
               />
             </Carousel.Item>
           </Carousel>
@@ -105,22 +112,8 @@ function Tabs() {
                   <Carousel.Item>
                     <img
                       className="d-block w-100"
-                      src="https://themasterchefs.org/kishidash.png"
+                      src={SliderImage}
                       alt="First slide"
-                    />
-                  </Carousel.Item>
-                  <Carousel.Item>
-                    <img
-                      className="d-block w-100"
-                      src="https://themasterchefs.org/stdash.png"
-                      alt="Second slide"
-                    />
-                  </Carousel.Item>
-                  <Carousel.Item>
-                    <img
-                      className="d-block w-100"
-                      src="https://themasterchefs.org/namidash.png"
-                      alt="Third slide"
                     />
                   </Carousel.Item>
                 </Carousel>
@@ -135,20 +128,15 @@ function Tabs() {
             <div className="row">
               <div className="col-md-12">
                 <Carousel variant="dark">
+
                   <Carousel.Item>
                     <img
                       className="d-block w-100"
-                      src="https://themasterchefs.org/rttdash.png"
-                      alt="First slide"
-                    />
-                  </Carousel.Item>
-                  <Carousel.Item>
-                    <img
-                      className="d-block w-100"
-                      src="https://themasterchefs.org/hush.png"
+                      src="https://themasterchefs.org/namidash.png"
                       alt="Third slide"
                     />
                   </Carousel.Item>
+
                 </Carousel>
               </div>
             </div>
